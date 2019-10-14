@@ -24,6 +24,49 @@ liRemover()
 liRemover()
 
 function ulAppender (element){
-const findUl = document.querySelector('#arguments')
-findUl.appendChild(element)   
+const findUl2 = document.querySelector('#arguments');
+findUl2.appendChild(element); 
 }
+const img = document.createElement('img');
+ulAppender(img);
+
+function imageSize(element){
+const findImg = document.querySelector(element); 
+    findImg.style.height = '30px'
+}
+
+imageSize('#image-1');
+
+function elementClasser(element){
+    const findElement = document.querySelector(element); 
+        findElement.className = 'invisible';
+    }
+    
+    elementClasser('#heading')
+
+    function idFonter (fontSize1, id){
+        Const findId = document.querySelector(id);
+        findId.style.fontSize = fontSize1;
+        return findId;
+     }
+     
+   //      idFonter('100px' ,'#lorem'); 
+     
+
+    function liTexter (text){
+        const li = document.createElement('li');
+        li.innerText = text
+
+       return li; 
+    }
+
+    ulAppender(liTexter('hello'));
+
+    
+    function headerTexter(headerSize, someText){
+    const newHeader = document.createElement('h' + headerSize);
+    newHeader.innerText = someText;
+    return newHeader;
+    }
+
+ulAppender(headerTexter('3', 'herros'));
