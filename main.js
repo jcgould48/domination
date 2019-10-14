@@ -45,12 +45,12 @@ function elementClasser(element){
     elementClasser('#heading')
 
     function idFonter (fontSize1, id){
-        Const findId = document.querySelector(id);
+        const findId = document.querySelector(id);
         findId.style.fontSize = fontSize1;
         return findId;
      }
      
-   //      idFonter('100px' ,'#lorem'); 
+        idFonter('100px' ,'#thing-1'); 
      
 
     function liTexter (text){
